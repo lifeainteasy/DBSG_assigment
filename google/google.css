@@ -1,0 +1,25 @@
+table, td, tr {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 20px;
+  }
+  
+
+table{
+
+}
+
+
+abbr{
+}
+.googleApp_Block{
+    background-color: grey;
+    cursor: pointer;
+}
+.googleApp_Block:hover{
+    background-color: black;
+}
+.table:hover  ~  .googleApp_Block{
+    background-color: black;  
+}
