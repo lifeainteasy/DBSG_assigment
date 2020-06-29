@@ -28,6 +28,7 @@ content{
     justify-content: space-around;
     height: 300px;
 
+
 }
 
 span{
@@ -35,15 +36,6 @@ span{
 
 }
 
-table, td, tr {
-    display: flex;
-    width: 15px;
-    
-  }
-  
-tbody {
-    cursor: pointer;
-}
 
 
 .btn_List{
@@ -69,6 +61,16 @@ span:hover{
     color: grey;
 }
 
+
+table, td, tr {
+    display: flex;
+    width: 15px;
+    
+  }
+  
+tbody {
+    cursor: pointer;
+}
 tbody:hover .googleApp_Block {
     background-color: black;
 }
@@ -78,7 +80,7 @@ tbody:hover .googleApp_Block {
 .searchBox{
 
     width: 550px;
-    height: 40px;
+    height: 45px;
     border: 1px solid #dfe1e5;
     border-radius: 30px;
     display: flex;
@@ -162,6 +164,7 @@ footer{
     text-decoration: none;
    color: rgba(0,0,0,.54);
    cursor: pointer;
+   
 }
 .item:hover{
     text-decoration: underline;
@@ -186,5 +189,59 @@ footer{
 }
 
 
+.list{
+    position: relative;
+    
+    cursor: pointer;
+
+
+}
+
+
+.arrow_box {
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    
+    left: -25px;
+    top: 30px;
+    padding: 10px;
+    width: 60px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+  }
+
+
+  
+  .arrow_box:after {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    border: solid transparent;
+    border-color: rgba(51, 51, 51, 0);
+    border-bottom-color: #333;
+    border-width: 10px;
+    pointer-events: none;
+    content: " ";
+  }
+  
 
  .google_inf .item:nth-child(4) { flex-grow: 0.8; } 
+
+
+img{
+    transition: visibility 0s;
+}
+ img:hover + p.arrow_box {
+    transition-delay: 0.5s;
+
+     visibility: visible;
+
+  }
+
+  
+ 
